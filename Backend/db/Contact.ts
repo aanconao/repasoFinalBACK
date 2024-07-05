@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 
 const ContactSchema = new Schema({
   nombreCompleto: { type: String, required: true },
-  numeroTelefono: { type: String, unique: true, required: true },
+  numeroTelefono: { type: Number, unique: true, required: true },
   country: { type: String, required: true },
   capital: { type: String, required: true },
 });
